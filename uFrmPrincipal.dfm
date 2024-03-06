@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'C'#225'lculo de Gordura Corporal'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
