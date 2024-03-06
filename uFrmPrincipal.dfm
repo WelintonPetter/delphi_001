@@ -11,4 +11,20 @@ object FrmPrincipal: TFrmPrincipal
   Font.Name = 'Segoe UI'
   Font.Style = []
   TextHeight = 15
+  object BtnResultado: TButton
+    Left = 64
+    Top = 352
+    Width = 113
+    Height = 41
+    Caption = 'Resultado'
+    TabOrder = 0
+  end
+  object BtnRequisitos: TButton
+    Left = 464
+    Top = 352
+    Width = 113
+    Height = 41
+    Caption = 'Ver Requisitos'
+    TabOrder = 1
+  end
 end
