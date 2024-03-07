@@ -4,7 +4,7 @@ uses
   Vcl.Forms,
   uFrmPrincipal in 'uFrmPrincipal.pas' {Imc},
   uFrmRequisitos in 'uFrmRequisitos.pas' {FrmRequisitos},
-  UfrmResultado in 'UfrmResultado.pas' {Form1};
+  UfrmResultado in 'UfrmResultado.pas' {Frmresultado};
 
 {$R *.res}
 
@@ -13,6 +13,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TImc, Imc);
   Application.CreateForm(TFrmRequisitos, FrmRequisitos);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmresultado, Frmresultado);
   Application.Run;
 end.

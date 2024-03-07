@@ -131,7 +131,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UfrmResultado.pas">
-            <Form>Form1</Form>
+            <Form>Frmresultado</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
