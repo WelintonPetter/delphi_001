@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, uFrmRequisitos, UfrmResultado;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, uFrmRequisitos, UfrmResultado, uDadosPessoa;
 
 type
   TImc = class(TForm)
@@ -14,9 +14,9 @@ type
     Label3: TLabel;
     Btn_resultado: TButton;
     Btn_registros: TButton;
-    Edt_altura: TEdit;
-    Edt_peso: TEdit;
-    Cmb_sexo: TComboBox;
+    EdtAltura: TEdit;
+    EdtPeso: TEdit;
+    CmbSexo: TComboBox;
     procedure Btn_registrosClick(Sender: TObject);
     procedure Btn_resultadoClick(Sender: TObject);
   private
@@ -39,7 +39,10 @@ end;
 
 procedure TImc.Btn_resultadoClick(Sender: TObject);
 begin
+ P_Dados_Pessoa.Altura := StrToFloat(EdtAltura.Text);
+ P_Dados_Pessoa.Peso   := StrToFloat(EdtPeso.Text);
+ P_Dados_Pessoa.Sexo   := CmbSexo.Text;
+ P_Dados_Pessoa.IMC    := 'não definido';
 FrmResultado.ShowModal;
-end;
 
-end.
+end;

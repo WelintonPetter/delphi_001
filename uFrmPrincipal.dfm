@@ -95,7 +95,7 @@ object Imc: TImc
     TabOrder = 2
     OnClick = Btn_registrosClick
   end
-  object Edt_altura: TEdit
+  object EdtAltura: TEdit
     Left = 208
     Top = 113
     Width = 121
@@ -103,7 +103,7 @@ object Imc: TImc
     TabOrder = 3
     TextHint = 'Digite sua Altura'
   end
-  object Edt_peso: TEdit
+  object EdtPeso: TEdit
     Left = 208
     Top = 174
     Width = 121
@@ -111,7 +111,7 @@ object Imc: TImc
     TabOrder = 4
     TextHint = 'Digite seu Peso'
   end
-  object Cmb_sexo: TComboBox
+  object CmbSexo: TComboBox
     Left = 208
     Top = 225
     Width = 121
