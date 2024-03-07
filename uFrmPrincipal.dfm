@@ -92,6 +92,7 @@ object Imc: TImc
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
+    OnClick = Btn_registrosClick
   end
   object Edt_altura: TEdit
     Left = 208
