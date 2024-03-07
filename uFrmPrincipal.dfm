@@ -78,6 +78,7 @@ object Imc: TImc
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
+    OnClick = Btn_resultadoClick
   end
   object Btn_registros: TButton
     Left = 392
