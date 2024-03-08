@@ -39,10 +39,15 @@ end;
 
 procedure TImc.Btn_resultadoClick(Sender: TObject);
 begin
- P_Dados_Pessoa.Altura := StrToFloat(EdtAltura.Text);
- P_Dados_Pessoa.Peso   := StrToFloat(EdtPeso.Text);
- P_Dados_Pessoa.Sexo   := CmbSexo.Text;
- P_Dados_Pessoa.IMC    := 'não definido';
-FrmResultado.ShowModal;
+   try
+   P_Dados_Pessoa.Altura := StrToFloat(EdtAltura.Text);
+   P_Dados_Pessoa.Peso   := StrToFloat(EdtPeso.Text);
+   P_Dados_Pessoa.Sexo   := CmbSexo.Text;
+   P_Dados_Pessoa.IMC    := 'não definido';
+   FrmResultado.ShowModal;
+   except
+    ShowMessage('Dados Inválidos');
+   end;
 
 end;
+end.

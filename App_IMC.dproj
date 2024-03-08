@@ -134,6 +134,7 @@
             <Form>Frmresultado</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="uDadosPessoa.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

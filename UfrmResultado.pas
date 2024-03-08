@@ -33,12 +33,15 @@ implementation
 
 procedure TFrmresultado.FormShow(Sender: TObject);
 begin
-   LblAltura.Caption := FloatToStr
+    LblAltura.Caption := FloatToStr
       (P_Dados_Pessoa.Altura);
- LblPeso.Caption   := FloatToStr
+    LblPeso.Caption   := FloatToStr
       (P_Dados_Pessoa.Peso);
- LblSexo.Caption   := P_Dados_Pessoa.Sexo;
- LblIMC.Caption    := P_Dados_Pessoa.IMC;
+    LblSexo.Caption   := P_Dados_Pessoa.Sexo;
+    LblIMC.Caption    := P_Dados_Pessoa.IMC;
 end;
 
+
 end.
+
+
